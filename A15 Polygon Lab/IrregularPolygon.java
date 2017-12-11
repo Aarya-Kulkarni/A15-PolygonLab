@@ -21,6 +21,7 @@ public class IrregularPolygon
     }
     
     public void draw() {
+        
     }
     
     public double perimeter() {
@@ -35,7 +36,6 @@ public class IrregularPolygon
     public double area() {
         int first = 0;
         int second = 0;
-        int area = 0;
         for (int i = 0; i < myPolygon.size() - 1; i++) {
             first += myPolygon.get(i).getX() * myPolygon.get(i + 1).getY();
         }
