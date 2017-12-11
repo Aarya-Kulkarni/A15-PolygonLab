@@ -9,7 +9,7 @@ import gpdraw.*;                //for DrawingTool
  */
 public class IrregularPolygon
 {
-    /*
+    
     private ArrayList <Point2D.Double> myPolygon;
     
     //constructors
@@ -24,11 +24,20 @@ public class IrregularPolygon
     }
     
     public double perimeter() {
+        double perimeter = 0; 
+        for (int i = 0; i < myPolygon.size() - 1; i++) {
+             perimeter = myPolygon.get(i).distance(myPolygon.get(i+1));
+        }
+        perimeter += myPolygon.get(0).distance(myPolygon.get(myPolygon.size()-1));
+        return perimeter;
     }
     
     public double area() {
+        int area = 0;
+        return area;
     }
     
-    fff
-    */
+    
+   
+    
 }
