@@ -33,8 +33,20 @@ public class IrregularPolygon
     }
     
     public double area() {
+        int first = 0;
+        int second = 0;
         int area = 0;
-        return area;
+        for (int i = 0; i < myPolygon.size() - 1; i++) {
+            first += myPolygon.get(i).getX() * myPolygon.get(i + 1).getY();
+        }
+        first += myPolygon.get(0).getX() * myPolygon.get(myPolygon.size() - 1).getY();
+        
+        for (int i = 0; i < myPolygon.size() - 1; i++) {
+            second += myPolygon.get(i).getY() * myPolygon.get(i + 1).getX();
+        }
+        second += myPolygon.get(0).getY() * myPolygon.get(myPolygon.size() - 1).getX();
+        
+        return Math.abs(.5 * (first - second));
     }
     
     
