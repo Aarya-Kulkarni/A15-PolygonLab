@@ -16,7 +16,7 @@ public class IrregularPolygon
     //constructors
     public IrregularPolygon() {
        myPaper = new SketchPad(500, 500);
-       myPencil = new DrawingTool();
+       myPencil = new DrawingTool(myPaper);
        ArrayList <Point2D.Double> myPolygon;
     }
 
