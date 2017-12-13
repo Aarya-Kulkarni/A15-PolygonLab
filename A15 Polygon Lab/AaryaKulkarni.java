@@ -7,14 +7,14 @@ import gpdraw.*;                //for DrawingTool
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class IrregularPolygon
+public class AaryaKulkarni implements Polygon
 {
     private SketchPad myPaper;
     private DrawingTool myPencil;
     private ArrayList <Point2D.Double> myPolygon = new ArrayList<>();
 
     //constructors
-    public IrregularPolygon() {
+    public AaryaKulkarni() {
        myPaper = new SketchPad(500, 500);
        myPencil = new DrawingTool(myPaper);
        ArrayList <Point2D.Double> myPolygon;
